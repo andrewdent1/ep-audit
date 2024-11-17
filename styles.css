@@ -395,3 +395,14 @@ form button:hover {
         height: auto;
     }
 }
+
+#footer-top {
+    background-color: #31572C;
+    color: white;
+    display: flex;
+}
+
+#footer-bottom {
+    background-color: #132A13;
+    color: white;
+}
