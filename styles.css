@@ -151,6 +151,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
     border: none;
     color: black;
     background-color: white;
@@ -190,6 +191,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     font-weight: 500;
     position: absolute;
+    font-family: 'Poppins', sans-serif;
 }
 
 .services-section button:hover {
@@ -318,6 +320,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     font-weight: 500;
     margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .clients-section button:hover {
@@ -401,6 +404,7 @@ form textarea {
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 form textarea {
@@ -415,6 +419,7 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
