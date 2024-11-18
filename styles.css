@@ -170,8 +170,8 @@ body {
 }
 
 .services-section {
-    padding: 150px 225px;
-    margin-bottom: 250px;
+    padding: 125px 225px;
+    margin-bottom: 325px;
     background-color: #f7f7f7;
 }
 
@@ -362,27 +362,45 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    margin: 100px 0px;
     padding: 50px 75px;
 }
 
 .contact-left h2 {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-size: 3rem;
     font-weight: 700;
 }
 
-.contact-left p {
-    margin: 10px 0;
+
+.contact-info {
+    display: flex;
+    padding: 25px 0px;
+}
+
+.contact-info img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-info div {
+    padding: 0px 25px;
+    font-size: 1rem;
+}
+
+#additional-offices {
+    padding: 10px 0px;
+    font-size: 0.9rem;
 }
 
 .contact-right {
     background-color: #9ebd9e7c;
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    margin: 100px 100px 100px 0;
     border-radius: 10px;
-    padding: 75px 100px;
+    padding: 75px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
 }
 
 .contact-right h2 {
@@ -443,7 +461,7 @@ form button:hover {
 }
 
 .footer-section-1 {
-    width: 30vw;
+    width: 20vw;    
 }
 
 .footer-logo {
@@ -453,28 +471,35 @@ form button:hover {
 }
 
 .footer-logo img {
-    width: 200px;
+    width: 125px;
     height: auto;
 }
 
-#footer-button {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #0f2a44;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
+.contact-info-footer {
+    display: flex;
+    padding: 5px 0px;
+}
+
+.contact-info-footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-info-footer div {
+    padding: 0px 15px;
+    font-size: 0.9rem;
+}
+
+#additional-offices-footer {
+    padding: 10px 0px;
+    font-size: 0.8rem;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
     background-color: #31572C;
-    padding: 50px;
+    padding: 50px 100px;
 }
 
 .footer-links a:hover {
@@ -492,15 +517,12 @@ form button:hover {
 
 .footer-links ul li {
     margin-bottom: 8px;
+    font-size: 0.9rem;
 }
 
 .footer-links ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-.more-links {
-    margin-left: -125px;
 }
 
 .footer-bottom {
@@ -509,8 +531,7 @@ form button:hover {
     align-items: center;
     border-top: 1px solid #ffffff;
     background-color: #132A13;
-    padding: 25px;
-}
+    padding: 25px 100px;}
 
 .footer-bottom a {
     text-decoration: none;
