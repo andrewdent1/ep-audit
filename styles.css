@@ -223,10 +223,16 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
 }
 
+.service-item img {
+    transform: rotate(-45deg);
+}
+
 .service-item span {
     transform: rotate(-45deg);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 .zigzag {
@@ -263,6 +269,10 @@ body {
     padding: 150px;
     text-align: center;
     background-color: #132A13;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .clients-section h2 {
@@ -276,25 +286,21 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    margin: 50px 0px;
+    margin: 25px 0px;
 }
 
 .client-item {
-    width: 250px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #112c1f;
-    font-weight: bold;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.client-item img {
+    width: 250px;
+    height: 100px;
 }
 
 .clients-section button {
-    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -303,7 +309,7 @@ body {
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     font-weight: 500;
-    position: absolute;
+    margin-top: 50px;
 }
 
 .clients-section button:hover {
@@ -324,19 +330,35 @@ body {
 .contact-left,
 .contact-right {
     flex: 1;
-    padding: 150px 75px;
     box-sizing: border-box;
+}
+
+.contact-left h3 {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #132A13;
+}
+
+.contact-right h3 {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #132A13;
 }
 
 .contact-left {
     color: black;
     display: flex;
     flex-direction: column;
+    margin: 100px;
+    padding: 50px 75px;
 }
 
 .contact-left h2 {
     margin-bottom: 50px;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .contact-left p {
@@ -347,10 +369,13 @@ body {
     background-color: #9ebd9e7c;
     display: flex;
     flex-direction: column;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 75px 100px;
 }
 
 .contact-right h2 {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 2rem;
 }
 
@@ -361,7 +386,7 @@ form {
 
 form input,
 form textarea {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -372,7 +397,7 @@ form textarea {
 
 form textarea {
     resize: none;
-    height: 100px;
+    height: 150px;
 }
 
 form button {
