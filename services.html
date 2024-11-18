@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the homepage of Environmental Property Audits.">
+    <title>Home | Environmental Property Audits</title>
+    <link rel="icon" type="image/png" href="Images/ep-audits-icon.png">
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar-top">
+            <div class="logo" id="navbar-top-left">
+                <a href="/index.html">
+                    <img src="Images/ep-audits-icon.png" alt="Environmental Property Audits Logo" id="nav-logo">
+                </a>
+            </div>
+            <div id="navbar-top-right">
+                <h1 id="nav-phone">1-800-404-0443</h1>
+                <img src="/Images/fb-logo.png" alt="" id="fb-logo">
+            </div>
+        </nav>
+        <nav class="navbar" id="navbar-bottom">
+            <div>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <div class="nav-links" id="nav-links">
+                    <a href="/index.html" class="dropdown-item">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="clients.html" class="dropdown-item">Clients</a>
+                    <a href="contact.html" class="dropdown-item">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h1>Our Services</h1>
+        <div class="services-container">
+            <div class="service-box" onclick="showDetails(0)">Phase I ESA</div>
+            <div class="service-box" onclick="showDetails(1)">Phase II Testing</div>
+            <div class="service-box" onclick="showDetails(2)">Remediation Design & Management</div>
+            <div class="service-box" onclick="showDetails(3)">Property Condition Assessment</div>
+            <div class="service-box" onclick="showDetails(4)">Pollutant Storage Tank Removal</div>
+            <div class="service-box" onclick="showDetails(5)">Additional Services</div>
+          </div>
+          <div class="details-container" id="details-container">
+            <div class="details-text">
+              <h2 id="service-header"></h2>
+              <p id="service-paragraph1"></p>
+              <p id="service-paragraph2"></p>
+              <p id="service-paragraph3"></p>
+              <p id="service-paragraph4"></p>
+              <p id="service-paragraph5"></p>
+              <p id="service-paragraph6"></p>
+              <p id="service-paragraph7"></p>
+              <p id="service-paragraph8"></p>
+              <p id="service-paragraph9"></p>
+              <p id="service-paragraph10"></p>
+              <p id="service-paragraph11"></p>
+              <p id="service-paragraph12"></p>
+            </div>
+            <div class="details-image">
+              <img id="service-image" src="" alt="Service Image">
+            </div>
+          </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-section-1">
+                    <div class="footer-logo">
+                        <img src="/Images/ep-audits-icon.png" alt="Oak Harbor Web Designs Logo">
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Clients</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer-contact">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-footer">
+                        <img src="Images/location-white.png" alt="">
+                        <div>
+                            <p>12700 Biscayne Blvd., Suite 401</p>
+                            <p>North Miami, FL 33181</p>
+                            <p id="additional-offices-footer">Additional offices located in Broward, Martin and Volusia Counties.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-footer">
+                        <img src="Images/phone-white.png" alt="">
+                        <div>
+                            <p>Toll Free: 1-800-404-0443</p>
+                            <p>Miami Office: 305-895-9788</p>
+                            <p>Stuart Office: 772-692-9458</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2024 Environmental Property Audits Inc.</p>
+                <p>Site produced and managed by <a href="https://spacecoastwebdev.com/">Space Coast Web Development</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const services = [
+        {
+            title: "Phase I ESA",
+            paragraphs: [
+            "A typical Phase I ESA consists of researching the property’s history including reviewing regulatory files, government databases, aerial photographs, City Directories, and Sanborn Insurance Maps.  A site reconnaissance is also performed to identify any physical evidence of environmental concern.",
+            "To ensure consistency and quality in our work, EPAI is up to date on the current ASTM 1527-13 industry guidelines.  Our goal is to work with all parties throughout the real estate transaction to determine “REAL” environmental concerns and not raise red flags where they should not exist.",
+            "We understand how difficult it is these days to complete a real estate transaction and we hope to take some of the stress and worry off your plate."
+            ],
+            image: "https://via.placeholder.com/300x200?text=Service+1"
+        },
+        {
+            title: "Phase II Testing",
+            paragraphs: [
+            "Should a red flag arise during our Phase I ESA, we will recommend Phase II Testing.  Our company performs this testing to determine the presence of contamination or to aid in ruling out any uncertainty based on our findings.",
+            "Phase II Testing consists of soil and groundwater sampling, soil gas surveys, site contamination modeling and risk evaluation.  These assist in determining the specific contaminants, the extent of surface and subsurface migration and any environmental or health risks resulting from the contamination."
+            ],
+            image: "https://via.placeholder.com/300x200?text=Service+2"
+        },
+        {
+            title: "Remediation Design & Management",
+            paragraphs: [
+            "If contaminants are found, EPAI will design and manage all aspects of the project including; developing a plan of action, coordinating and managing all remediation subcontractors, obtaining agency permits, reporting, and monitoring the project from start to finish. Our experts ensure that all aspects of the project fully complies with all necessary regulations."
+            ],
+            image: "https://via.placeholder.com/300x200?text=Service+3"
+        },
+        {
+            title: "Property Condition Assessment",
+            paragraphs: [
+            "The scope of all engineering and property condition work shall include a physical inspection of the property including a review of any pertinent documentation located on site relating to the construction and condition of the property.  Areas inspected shall include a visual inspection and evaluation of the Mechanical, Electric, Air Conditioning, Plumbing, Roofing, Structural, Parking, and Drainage elements of the on site improvements.  All reports shall comply with ASTM E2018-08 guidelines.",
+            "EPAI provides building audits to determine compliance with the Americans With Disabilities Act (the ADA). The ADA is a Federal law codified at 42 USC Section 12101, which required owners and tenants of public accommodations to remove barriers to access by disabled persons and provide auxiliary aids and services for hearing, vision or speech impaired persons by January 26, 1992. The audit includes the identification, qualification and cost estimations for the improvements in public buildings required under the ADA.",
+            "EPAI can also provide the service of producing construction documents used in selecting contractors to install improvements and supervise selected contractor’s work on behalf of the owner."    
+        ],
+            image: "https://via.placeholder.com/300x200?text=Service+4"
+        },
+        {
+            title: "Pollutant Storage Tank Removal",
+            paragraphs: [
+            "They are easy to ignore due to “out of sight out of mind.”  Tanks with a capacity of 1,100 gallons or less are exempt from federal regulation and each individual state has their own mandates.  However, there are new regulations in place and you can never be too careful.  If leaks or spills occur that go unnoticed or unreported, cleanup of your property can come with a hefty price tag.",
+            "So regardless of the size of your tank, or whether it is regulated or not, make sure to have your property examined.  Our team of experts are licensed in all areas of storage tank replacement, removal, and remediation.  Clean up cost vary on a case-by-case basis but include excavation, soil analysis, groundwater analysis, soil transportation and disposal, groundwater cleanup and special management options that must be followed.",
+            "We specialize in closure and decommissioning UST’s which includes locating and uncovering the tank and pipelines, removing flammable vapors and products, cleaning and disposal of tank.  Or abandoning the tank in place by filling with an inert material.",
+            "Be aware of the condition of any underground fuel tanks buried on your property, even those that have been abandoned in the past. A leaking underground tank is not only a personal health risk, but also a potential financial liability, should you have to pay for the cleanup resulting from contamination discovered regarding the tank.  Please call us should you have any questions or concerns regarding these issues on your property."
+            ],
+            image: "https://via.placeholder.com/300x200?text=Service+5"
+        },
+        {
+            title: "Additional Services",
+            paragraphs: [
+            "Phase III - Contamination Remediation",
+            "Engineering & Building Inspections",
+            "State Certified General Contractors",
+            "Licensed Pollutant Storage Tank Contractors",
+            "LEED Accredited Professionals",
+            "Energy Raters",
+            "Mold & Abestos Testing",
+            "ADA (American Disability Act) Audits",
+            "Risk Management Assessments",
+            "Process Safety Management",
+            "OSHA Hazwhopper Certified"
+            ],
+            image: "https://via.placeholder.com/300x200?text=Miscellaneous"
+        }
+        ];
+
+        function showDetails(index) {
+            const detailsContainer = document.getElementById('details-container');
+            const header = document.getElementById('service-header');
+            const paragraph1 = document.getElementById('service-paragraph1');
+            const paragraph2 = document.getElementById('service-paragraph2');
+            const paragraph3 = document.getElementById('service-paragraph3');
+            const paragraph4 = document.getElementById('service-paragraph4');
+            const paragraph5 = document.getElementById('service-paragraph5');
+            const paragraph6 = document.getElementById('service-paragraph6');
+            const paragraph7 = document.getElementById('service-paragraph7');
+            const paragraph8 = document.getElementById('service-paragraph8');
+            const paragraph9 = document.getElementById('service-paragraph9');
+            const paragraph10 = document.getElementById('service-paragraph10');
+            const paragraph11 = document.getElementById('service-paragraph11');
+            const paragraph12 = document.getElementById('service-paragraph12');
+            const image = document.getElementById('service-image');
+
+            const service = services[index];
+
+            // Set service details
+            header.textContent = service.title;
+            paragraph1.textContent = service.paragraphs[0];
+            paragraph2.textContent = service.paragraphs[1];
+            paragraph3.textContent = service.paragraphs[2];
+            paragraph4.textContent = service.paragraphs[3];
+            paragraph5.textContent = service.paragraphs[4];
+            paragraph6.textContent = service.paragraphs[5];
+            paragraph7.textContent = service.paragraphs[6];
+            paragraph8.textContent = service.paragraphs[7];
+            paragraph9.textContent = service.paragraphs[8];
+            paragraph10.textContent = service.paragraphs[9];
+            paragraph11.textContent = service.paragraphs[10];
+            paragraph12.textContent = service.paragraphs[11];
+            image.src = service.image;
+
+            // Display details container
+            detailsContainer.style.display = 'flex';
+
+            // Remove the active class from all service boxes
+            const serviceBoxes = document.querySelectorAll('.service-box');
+            serviceBoxes.forEach(box => box.classList.remove('active'));
+
+            // Add the active class to the clicked service box
+            serviceBoxes[index].classList.add('active');
+        }
+        window.onload = function() {
+        showDetails(0); // Display Main Service 1 on page load
+        };
+    </script>
+
+</body>
