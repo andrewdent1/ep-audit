@@ -148,16 +148,90 @@ body {
 }
 
 .about-section img {
-    max-width: 25%;
+    width: 25%;
+    min-width: 250px;
+}
+
+#about-img-horizontal {
+    display: none;
+    width: 90%;
+    margin: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
 }
 
 #about-text p {
     padding: 20px 25px 20px 100px;
+    font-size: 16px;
 }
 
 #i2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+}
+
+@media (max-width: 1500px) {
+    #about-text p {
+        font-size: 14px;
+    }
+
+    #quick-links {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #about-text p {
+        font-size: 16px;
+        padding: 20px 50px;
+    }
+
+    #intro {
+        padding: 50px;
+    }
+
+    .about-section img {
+        display: none;
+    }
+
+    #about-img-horizontal {
+        display: block;
+    }
+
+    .footer-logo img {
+        height: 75px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        height: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #footer-contact h3 {
+        font-size: 0.85rem;
+    }
+
+    #footer-contact p, #additional-offices-footer {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #about-text p {
+        padding: 10px;
+    }
+
+    .footer-logo img {
+        scale: 0.75;
+    }
+
+    footer {
+        padding-left: 0;
+    }
 }
 
 .footer {
@@ -181,6 +255,10 @@ body {
 
 .footer-logo img {
     height: 100px;
+}
+
+#footer-contact {
+    max-width: 33%;
 }
 
 .contact-info-footer {
@@ -273,48 +351,6 @@ body {
 .footer-item-img {
     width: 25px;
     padding-right: 10px;
-}
-
-/* --- Media Query for Mobile Responsiveness --- */
-@media (max-width: 1000px) {
-    .footer-links {
-        display: hide;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        padding: 20px 30px;
-    }
-
-    .footer-logo img {
-        height: 80px;
-    }
-
-    .footer-item-img {
-        width: 20px;
-        padding-right: 5px;
-    }
-
-    .contact-info-footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .contact-info-footer img {
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    .footer-bottom ul {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .footer-bottom ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
 }
 
 .scroll-reveal {
