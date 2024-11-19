@@ -472,13 +472,13 @@ form button:hover {
 
 .footer-logo {
     display: flex;
-    align-items: center;
     gap: 10px;
+    margin: auto 0;
 }
 
 .footer-logo img {
-    width: 125px;
-    height: auto;
+    height: 100px;
+    margin: auto 0;
 }
 
 .contact-info-footer {

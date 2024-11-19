@@ -81,32 +81,151 @@ body {
 }
 
 #intro {
-    padding: 50px 100px;
+    padding: 50px 0px 100px 0px;
 }
 
-#intro h1 {
+#intro h3 {
     text-align: center;
     font-size: 3rem;
     padding: 25px 0 50px 0;
 }
 
-.about-section {
+.slideshow-container {
+    position: relative;
+    width: 250vw;
+    height: 50vh;
+    margin-top: 50px;
+    /* Enough height to accommodate the tallest image */
+}
+
+.slideshow {
     display: flex;
-    justify-content: center;
     align-items: center;
+    animation: scroll 90s linear infinite;
+    /* Continuous, seamless movement */
 }
 
-.about-section img {
-    max-width: 25%;
+.slide {
+    flex-shrink: 0;
+    width: 25vw;
+    margin-right: 5vw;
+    object-fit: cover;
+    background: #333;
 }
 
-#about-text p {
-    padding: 20px 25px 20px 100px;
+/* Alternate heights for images */
+.slide:nth-child(odd) {
+    height: 40vh;
 }
 
-#i2 {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+.slide:nth-child(even) {
+    height: 50vh;
+}
+
+/* Colored backgrounds */
+.slide:nth-child(1) {
+    background: #e57373;
+}
+
+/* Light red */
+.slide:nth-child(2) {
+    background: #f06292;
+}
+
+/* Pink */
+.slide:nth-child(3) {
+    background: #ba68c8;
+}
+
+/* Purple */
+.slide:nth-child(4) {
+    background: #7986cb;
+}
+
+/* Blue */
+.slide:nth-child(5) {
+    background: #4fc3f7;
+}
+
+/* Light blue */
+.slide:nth-child(6) {
+    background: #4db6ac;
+}
+
+/* Teal */
+.slide:nth-child(7) {
+    background: #81c784;
+}
+
+/* Green */
+.slide:nth-child(8) {
+    background: #fff176;
+}
+
+/* Purple */
+.slide:nth-child(9) {
+    background: #7986cb;
+}
+
+/* Blue */
+.slide:nth-child(10) {
+    background: #4fc3f7;
+}
+
+/* Light blue */
+.slide:nth-child(11) {
+    background: #4db6ac;
+}
+
+/* Teal */
+.slide:nth-child(12) {
+    background: #81c784;
+}
+
+/* Green */
+.slide:nth-child(13) {
+    background: #fff176;
+}
+
+/* Yellow */
+
+/* Create seamless looping effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+        /* Start from the beginning */
+    }
+
+    100% {
+        transform: translateX(-111%);
+        /* Move the entire slideshow container to the left */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 23vw);
+    gap: 6vw;
+    padding: 2.5vw 10vw 5vw 10vw;
+    justify-content: center;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grid-item h4 {
+    margin-top: 0;
+    font-size: 1.33em;
+    color: #132A13;
+    padding-bottom: 25px;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #31572C;
+    margin-bottom: 0;
 }
 
 .footer {

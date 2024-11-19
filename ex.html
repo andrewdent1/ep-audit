@@ -1,181 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: #f9f9f9;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of Divs</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
 
-    h1 {
-      margin-bottom: 20px;
-    }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 20vw);
+            /* 3 columns, each 20vw wide */
+            gap: 10vw;
+            /* Space between each div */
+            padding: 10vw;
+            /* Space from the left and right sides */
+            justify-content: center;
+        }
 
-    .services-container {
-    display: flex;
-    gap: 15px;
-    width: 90%;
-    justify-content: center;
-    flex-wrap: nowrap; /* Prevent wrapping to keep all boxes on the same line */
-    }
+        .grid-item {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
 
-    .service-box {
-      width: 16%;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-color: #0078d7;
-      color: white;
-      font-weight: bold;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.3s, background-color 0.3s;
-      flex-grow: 1;
-    }
+        .grid-item h4 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
 
-    .service-box:hover {
-      background-color: #005ba1;
-      transform: scale(1.05);
-    }
-
-    .details-container {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      width: 90%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: none;
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-    }
-
-    .details-text {
-      flex: 1;
-    }
-
-    .details-text h2 {
-      margin-top: 0;
-    }
-
-    .details-image {
-      flex: 1;
-      max-width: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .details-image img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+        .grid-item p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Our Services</h1>
-  <div class="services-container">
-    <div class="service-box" onclick="showDetails(0)">Main Service 1</div>
-    <div class="service-box" onclick="showDetails(1)">Main Service 2</div>
-    <div class="service-box" onclick="showDetails(2)">Main Service 3</div>
-    <div class="service-box" onclick="showDetails(3)">Main Service 4</div>
-    <div class="service-box" onclick="showDetails(4)">Main Service 5</div>
-    <div class="service-box" onclick="showDetails(5)">Miscellaneous</div>
-  </div>
-  <div class="details-container" id="details-container">
-    <div class="details-text">
-      <h2 id="service-header"></h2>
-      <p id="service-paragraph1"></p>
-      <p id="service-paragraph2"></p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h4>Item 1</h4>
+            <p>This is a description for item 1.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 2</h4>
+            <p>This is a description for item 2.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 3</h4>
+            <p>This is a description for item 3.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 4</h4>
+            <p>This is a description for item 4.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 5</h4>
+            <p>This is a description for item 5.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 6</h4>
+            <p>This is a description for item 6.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 7</h4>
+            <p>This is a description for item 7.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 8</h4>
+            <p>This is a description for item 8.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 9</h4>
+            <p>This is a description for item 9.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 10</h4>
+            <p>This is a description for item 10.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 11</h4>
+            <p>This is a description for item 11.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 12</h4>
+            <p>This is a description for item 12.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 13</h4>
+            <p>This is a description for item 13.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 14</h4>
+            <p>This is a description for item 14.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 15</h4>
+            <p>This is a description for item 15.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 16</h4>
+            <p>This is a description for item 16.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 17</h4>
+            <p>This is a description for item 17.</p>
+        </div>
+        <div class="grid-item">
+            <h4>Item 18</h4>
+            <p>This is a description for item 18.</p>
+        </div>
     </div>
-    <div class="details-image">
-      <img id="service-image" src="" alt="Service Image">
-    </div>
-  </div>
-
-  <script>
-    const services = [
-      {
-        title: "Main Service 1",
-        paragraphs: [
-          "This is a detailed description of Main Service 1. It explains the first aspect of the service.",
-          "Here is additional information about Main Service 1, highlighting its key benefits and features."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Service+1"
-      },
-      {
-        title: "Main Service 2",
-        paragraphs: [
-          "Main Service 2 offers amazing benefits. Here's a brief explanation of what it entails.",
-          "Learn more about how Main Service 2 can help your business or personal needs."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Service+2"
-      },
-      {
-        title: "Main Service 3",
-        paragraphs: [
-          "Main Service 3 is designed to improve efficiency in your processes.",
-          "It comes with tools and support that ensure success."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Service+3"
-      },
-      {
-        title: "Main Service 4",
-        paragraphs: [
-          "Main Service 4 specializes in delivering results quickly.",
-          "With its expert team and proven strategies, you can trust the outcomes."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Service+4"
-      },
-      {
-        title: "Main Service 5",
-        paragraphs: [
-          "Main Service 5 focuses on client satisfaction and innovation.",
-          "The service offers flexibility and customization for your needs."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Service+5"
-      },
-      {
-        title: "Miscellaneous Services",
-        paragraphs: [
-          "Our miscellaneous services include a variety of smaller, yet important offerings.",
-          "They are tailored to ensure all your other needs are met comprehensively."
-        ],
-        image: "https://via.placeholder.com/300x200?text=Miscellaneous"
-      }
-    ];
-
-    function showDetails(index) {
-      const detailsContainer = document.getElementById('details-container');
-      const header = document.getElementById('service-header');
-      const paragraph1 = document.getElementById('service-paragraph1');
-      const paragraph2 = document.getElementById('service-paragraph2');
-      const image = document.getElementById('service-image');
-
-      const service = services[index];
-
-      header.textContent = service.title;
-      paragraph1.textContent = service.paragraphs[0];
-      paragraph2.textContent = service.paragraphs[1];
-      image.src = service.image;
-
-      detailsContainer.style.display = 'flex';
-    }
-  </script>
 </body>
+
 </html>
