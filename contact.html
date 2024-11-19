@@ -45,9 +45,9 @@
 
     <section class="contact-section">
         <div class="contact-left">
-            <h3>Contact Us</h3>
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
+            <h3 class="scroll-reveal">Contact Us</h3>
+            <h2 class="scroll-reveal">Get In Touch</h2>
+            <div class="contact-info scroll-reveal">
                 <img src="Images/location.png" alt="">
                 <div>
                     <p>Environmental Property Audits Inc.</p>
@@ -56,7 +56,7 @@
                     <p id="additional-offices">Additional offices located in Broward, Martin and Volusia Counties.</p>
                 </div>
             </div>
-            <div class="contact-info">
+            <div class="contact-info scroll-reveal">
                 <img src="Images/phone.png" alt="">
                 <div>
                     <p>Toll Free: 1-800-404-0443</p>
@@ -67,8 +67,8 @@
             </div>
         </div>
         <div class="contact-right">
-            <h3>Book Appointment</h3>
-            <form action="#" method="POST">
+            <h3 class="scroll-reveal">Book Appointment</h3>
+            <form action="#" method="POST" class="scroll-reveal">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="tel" name="phone" placeholder="Your Phone Number" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -127,5 +127,31 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+
+            function revealOnScroll() {
+                const viewportHeight = window.innerHeight;
+
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const triggerPoint = 50; // Adjust this to trigger earlier or later
+
+                    console.log('Element position:', elementTop);  // Add a log to check the element's position
+
+                    if (elementTop < viewportHeight - triggerPoint) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check for elements already in view
+            revealOnScroll();
+        });
+    </script>
 
 </body>

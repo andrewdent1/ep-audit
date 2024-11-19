@@ -25,7 +25,8 @@
             </div>
             <div id="navbar-top-right">
                 <h1 id="nav-phone">1-800-404-0443</h1>
-                <img src="/Images/fb-logo.png" alt="" id="fb-logo">
+                <a href="https://www.facebook.com/profile.php?id=100072187024873" target="_blank"><img
+                        src="/Images/fb-logo.png" alt="" id="fb-logo"></a>
             </div>
         </nav>
         <nav class="navbar" id="navbar-bottom">
@@ -43,8 +44,8 @@
     </header>
 
     <section id="intro">
-        <h1>Our Services</h1>
-        <div class="services-container">
+        <h1 class="scroll-reveal">Our Services</h1>
+        <div class="services-container scroll-reveal">
             <div class="service-box" onclick="showDetails(0)">Phase I ESA</div>
             <div class="service-box" onclick="showDetails(1)">Phase II Testing</div>
             <div class="service-box" onclick="showDetails(2)">Remediation Design & Management</div>
@@ -52,7 +53,7 @@
             <div class="service-box" onclick="showDetails(4)">Pollutant Storage Tank Removal</div>
             <div class="service-box" onclick="showDetails(5)">Additional Services</div>
         </div>
-        <div class="details-container" id="details-container">
+        <div class="details-container scroll-reveal" id="details-container">
             <div class="details-text">
                 <h2 id="service-header"></h2>
                 <p id="service-paragraph1"></p>
@@ -234,6 +235,32 @@
         window.onload = function () {
             showDetails(0); // Display Main Service 1 on page load
         };
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+
+            function revealOnScroll() {
+                const viewportHeight = window.innerHeight;
+
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const triggerPoint = 50; // Adjust this to trigger earlier or later
+
+                    console.log('Element position:', elementTop);  // Add a log to check the element's position
+
+                    if (elementTop < viewportHeight - triggerPoint) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check for elements already in view
+            revealOnScroll();
+        });
     </script>
 
 </body>

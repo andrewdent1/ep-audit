@@ -58,8 +58,8 @@
             </div>
         </section>
         <section id="about">
-            <h2>Do you know what was on your property 50 to 100 years ago?</h2>
-            <p>Environmental Property Audits Inc. (EPAI), is comprised of environmental professionals dedicated to
+            <h2 class="scroll-reveal">Do you know what was on your property 50 to 100 years ago?</h2>
+            <p class="scroll-reveal">Environmental Property Audits Inc. (EPAI), is comprised of environmental professionals dedicated to
                 serving
                 their clients.  We protect parties involved in the commercial and multi-family real estate industry from
                 unforeseen environmental liability during transactions.  EPAI’s consultants assist our clients in
@@ -69,11 +69,11 @@
                 services include but are not limited to Financial Lenders, Commercial Banker and their clients,
                 Commercial
                 Realtors, Developers, Asset Firms, Insurance Companies and Private Investors.</p>
-            <p>Our goal is to perform Phase I Environmental Site Assessments (ESA), (historical reviews of the property)
+            <p class="scroll-reveal">Our goal is to perform Phase I Environmental Site Assessments (ESA), (historical reviews of the property)
                 and
                 Property Condition Assessments (PCA), to unveil potential risks and expenses, assist in determining the
                 correct valuation of real estate and provide guidance in budget planning.</p>
-            <p>Environmental matters are complicated and are becoming more complicated every year due to increased
+            <p class="scroll-reveal">Environmental matters are complicated and are becoming more complicated every year due to increased
                 regulations.  For the past 22 years we have solved our client’s toughest environmental problems.  If you
                 have been looking for a firm that is detail oriented, relentless in looking after your best interest,
                 keeps
@@ -83,9 +83,9 @@
     </section>
 
     <section class="services-section">
-        <h2>Our Services</h2>
-        <button onclick="window.location.href='services.html'">View All</button>
-        <div class="services-grid">
+        <h2 class="scroll-reveal">Our Services</h2>
+        <button onclick="window.location.href='services.html'" class="scroll-reveal">View All</button>
+        <div class="services-grid scroll-reveal">
             <div class="service-item zigzag">
                 <img src="/Images/historic-shield.svg" alt="">
                 <span>Phase I ESA</span>
@@ -110,8 +110,8 @@
     </section>
 
     <section class="clients-section">
-        <h2>Past Clients</h2>
-        <div class="clients-grid">
+        <h2 class="scroll-reveal">Past Clients</h2>
+        <div class="clients-grid scroll-reveal">
             <div class="client-item"><img src="Images/company-1.png" alt=""></div>
             <div class="client-item"><img src="/Images/company-2.png" alt=""></div>
             <div class="client-item"><img src="/Images/company-3.png" alt=""></div>
@@ -121,14 +121,14 @@
             <div class="client-item"><img src="/Images/company-7.png" alt=""></div>
             <div class="client-item"><img src="/Images/company-8.png" alt=""></div>
         </div>
-        <button onclick="window.location.href='clients.html'">View All</button>
+        <button onclick="window.location.href='clients.html'" class="scroll-reveal">View All</button>
     </section>
 
     <section class="contact-section">
         <div class="contact-left">
-            <h3>Contact Us</h3>
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
+            <h3 class="scroll-reveal">Contact Us</h3>
+            <h2 class="scroll-reveal">Get In Touch</h2>
+            <div class="contact-info scroll-reveal">
                 <img src="Images/location.png" alt="">
                 <div>
                     <p>Environmental Property Audits Inc.</p>
@@ -137,7 +137,7 @@
                     <p id="additional-offices">Additional offices located in Broward, Martin and Volusia Counties.</p>
                 </div>
             </div>
-            <div class="contact-info">
+            <div class="contact-info scroll-reveal">
                 <img src="Images/phone.png" alt="">
                 <div>
                     <p>Toll Free: 1-800-404-0443</p>
@@ -148,8 +148,8 @@
             </div>
         </div>
         <div class="contact-right">
-            <h3>Book Appointment</h3>
-            <form action="#" method="POST">
+            <h3 class="scroll-reveal">Book Appointment</h3>
+            <form action="#" method="POST" class="scroll-reveal">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="tel" name="phone" placeholder="Your Phone Number" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -208,5 +208,31 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+                document.addEventListener("DOMContentLoaded", function() {
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+
+            function revealOnScroll() {
+                const viewportHeight = window.innerHeight;
+
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const triggerPoint = 50; // Adjust this to trigger earlier or later
+
+                    console.log('Element position:', elementTop);  // Add a log to check the element's position
+
+                    if (elementTop < viewportHeight - triggerPoint) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check for elements already in view
+            revealOnScroll();
+        });
+    </script>
 
 </body>
