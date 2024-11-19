@@ -54,9 +54,14 @@ body {
     font-size: 28px;
     display: none;
     cursor: pointer;
+    width: 50px;
 }
 
-.nav-links {
+.nav-links1 {
+    display: none;
+}
+
+.nav-links2 {
     display: flex;
     transition: transform 0.3s ease;
     color: white;
@@ -65,7 +70,7 @@ body {
     scale: 1.2;
 }
 
-.nav-links a {
+.nav-links2 a {
     text-decoration: none;
     padding: 5px 15px;
     transition: transform 0.1s;
@@ -73,11 +78,56 @@ body {
     position: relative;
 }
 
-.nav-links a:hover {
+.nav-links2 a:hover {
     transform: scale(1.1);
     background-color: #f7f7f7;
     color: #132A13;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    #hamburger {
+        display: block; /* Show the hamburger menu */
+    }
+
+    #fb-logo, #navbar-bottom, #nav-phone {
+        display: none; /* Hide the Facebook logo */
+    }
+
+    #nav-links1.active {
+        display: flex;
+        flex-direction: column; /* Arrange links vertically */
+        width: 100%; /* Take up full width */
+        text-align: center; /* Center align the links */
+        position: absolute; /* Position it below the hamburger */
+        top: 125px; /* Space between hamburger and nav */
+        left: 0;
+        background-color: #31572C;
+        z-index: 100;
+    }
+        
+    #nav-links1 a:hover {
+        background-color: #f7f7f7;
+        color: #132A13;
+        border-radius: 5px;
+    }
+
+
+    #nav-links1 a {
+        padding: 10px 0;
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #hamburger {
+        display: none; /* Hide the hamburger menu on wider screens */
+    }
+
+    #fb-logo {
+        display: block; /* Show the Facebook logo */
+    }
 }
 
 #diagonal-bg {

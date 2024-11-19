@@ -25,19 +25,26 @@
             </div>
             <div id="navbar-top-right">
                 <h1 id="nav-phone">1-800-404-0443</h1>
-                <a href="https://www.facebook.com/profile.php?id=100072187024873" target="_blank"><img
-                        src="/Images/fb-logo.png" alt="" id="fb-logo"></a>
-            </div>
-        </nav>
-        <nav class="navbar" id="navbar-bottom">
-            <div>
                 <div class="hamburger" id="hamburger">&#9776;</div>
-                <div class="nav-links" id="nav-links">
-                    <a href="/index.html" class="dropdown-item">Home</a>
+                <div class="nav-links1" id="nav-links1">
+                    <a href="/index.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="services.html">Services</a>
-                    <a href="clients.html" class="dropdown-item">Clients</a>
-                    <a href="contact.html" class="dropdown-item">Contact</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100072187024873" target="_blank"><img src="/Images/fb-logo.png" alt="" id="fb-logo"></a>
+            </div>
+        </nav>
+    
+        <nav class="navbar" id="navbar-bottom">
+            <div>
+                <div class="nav-links2" id="nav-links2">
+                    <a href="/index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         </nav>
@@ -262,5 +269,19 @@
             revealOnScroll();
         });
     </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburger = document.getElementById('hamburger');
+                const navLinks1 = document.getElementById('nav-links1');
+    
+                // Toggle the display of the navigation links when the hamburger is clicked
+                hamburger.addEventListener('click', function () {
+                    // Only toggle #nav-links1 on screens smaller than 1000px
+                    if (window.innerWidth <= 1000) {
+                        navLinks1.classList.toggle('active');
+                    }
+                });
+            });
+        </script>
 
 </body>
