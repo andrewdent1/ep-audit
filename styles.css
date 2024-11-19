@@ -156,7 +156,7 @@ body {
     background-color: white;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
-    font-weight: 500;
+    font-weight: 300;
     width: 33%;
 }
 
@@ -166,6 +166,7 @@ body {
     color: white;
     border-radius: 5px;
     transition: transform 0.1s ease;
+    font-weight: 500;
 }
 
 .services-section {
@@ -188,12 +189,13 @@ body {
     background-color: #9ebd9e7c;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
-    font-weight: 500;
+    font-weight: 300;
     position: absolute;
     font-family: 'Poppins', sans-serif;
 }
 
 .services-section button:hover {
+    font-weight: 500;
     transform: scale(1.05);
     background-color: #132A13;
     color: white;
@@ -322,13 +324,14 @@ body {
     background-color: white;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
-    font-weight: 500;
+    font-weight: 300;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
 }
 
 .clients-section button:hover {
     transform: scale(1.05);
+    font-weight: 500;
     background-color: #9ebd9e7c;
     color: white;
     border-radius: 5px;
