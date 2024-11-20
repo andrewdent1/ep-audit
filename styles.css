@@ -1,3 +1,9 @@
+/* src/styles.css or src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -247,7 +253,7 @@ body {
     border-radius: 5px;
     border: none;
     color: black;
-    background-color: white;
+    background-color: #9ebd9e7c;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     font-weight: 300;
@@ -278,7 +284,7 @@ body {
 .service-item {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: #9ebd9e7c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,10 +531,7 @@ form button:hover {
 .footer {
     color: #ffffff;
     margin-top: 50px;
-}
-
-.container {
-    margin: 0 auto;
+    width: 100%;
 }
 
 .footer-section-1 {
@@ -862,5 +865,47 @@ form button:hover {
 
     .footer-section-1 img {
         height: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    #intro {
+        height: 100%;
+        padding: 100px 0 200px 0;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro-right h1 {
+        font-size: 2rem;
+        width: 75%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro-right button {
+        scale: 0.8;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #intro-left img {
+        margin-top: 500px;
+    }
+
+    #about h2 {
+        font-size: 1.25rem;
+    }
+
+    #about p {
+        font-size: 1rem;
     }
 }
