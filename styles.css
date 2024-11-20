@@ -87,25 +87,34 @@ body {
 
 @media screen and (max-width: 1000px) {
     #hamburger {
-        display: block; /* Show the hamburger menu */
+        display: block;
+        /* Show the hamburger menu */
     }
 
-    #fb-logo, #navbar-bottom, #nav-phone {
-        display: none; /* Hide the Facebook logo */
+    #fb-logo,
+    #navbar-bottom,
+    #nav-phone {
+        display: none;
+        /* Hide the Facebook logo */
     }
 
     #nav-links1.active {
         display: flex;
-        flex-direction: column; /* Arrange links vertically */
-        width: 100%; /* Take up full width */
-        text-align: center; /* Center align the links */
-        position: absolute; /* Position it below the hamburger */
-        top: 125px; /* Space between hamburger and nav */
+        flex-direction: column;
+        /* Arrange links vertically */
+        width: 100%;
+        /* Take up full width */
+        text-align: center;
+        /* Center align the links */
+        position: absolute;
+        /* Position it below the hamburger */
+        top: 125px;
+        /* Space between hamburger and nav */
         left: 0;
         background-color: #31572C;
         z-index: 100;
     }
-        
+
     #nav-links1 a:hover {
         background-color: #f7f7f7;
         color: #132A13;
@@ -122,11 +131,13 @@ body {
 
 @media screen and (min-width: 1001px) {
     #hamburger {
-        display: none; /* Hide the hamburger menu on wider screens */
+        display: none;
+        /* Hide the hamburger menu on wider screens */
     }
 
     #fb-logo {
-        display: block; /* Show the Facebook logo */
+        display: block;
+        /* Show the Facebook logo */
     }
 }
 
@@ -236,7 +247,7 @@ body {
     border-radius: 5px;
     border: none;
     color: black;
-    background-color: #9ebd9e7c;
+    background-color: white;
     font-size: 1.1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
     font-weight: 300;
@@ -267,13 +278,13 @@ body {
 .service-item {
     width: 120px;
     height: 120px;
-    background-color: #9ebd9e7c;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+    box-shadow: 0 px 8px rgba(0, 0, 0, 0.33);
     position: relative;
     transform: rotate(45deg);
     overflow: hidden;
@@ -334,7 +345,7 @@ body {
 .clients-section {
     padding: 150px;
     text-align: center;
-    background-color: #132A13;
+    background-color: #31572C;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -513,6 +524,7 @@ form button:hover {
 
 .footer {
     color: #ffffff;
+    margin-top: 50px;
 }
 
 .container {
@@ -525,13 +537,16 @@ form button:hover {
 
 .footer-logo {
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin: auto 0;
 }
 
 .footer-logo img {
     height: 100px;
-    margin: auto 0;
+}
+
+#footer-contact {
+    max-width: 33%;
 }
 
 .contact-info-footer {
@@ -635,4 +650,217 @@ form button:hover {
 .scroll-reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 1500px) {
+    #quick-links {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer-logo img {
+        height: 75px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        height: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #footer-contact h3 {
+        font-size: 0.85rem;
+    }
+
+    #footer-contact p,
+    #additional-offices-footer {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-logo img {
+        scale: 0.75;
+    }
+
+    footer {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    #nav-logo {
+        height: 80px;
+    }
+
+    #intro {
+        padding: 0;
+    }
+
+    #intro-right {
+        padding: 0 0 0 50px;
+    }
+
+    #intro-left {
+        margin: 0;
+    }
+
+    #intro-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    #intro-right h1 {
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    #intro-right button {
+        width: 50%;
+    }
+
+    #about {
+        padding: 0 100px 50px 100px;
+    }
+
+    .services-section {
+        padding: 100px 50px;
+    }
+
+    .services-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .zigzag {
+        scale: 1.25;
+    }
+
+    .zigzag:hover {
+        scale: 1.3;
+    }
+
+    .zigzag:nth-child(1) {
+        top: 75px;
+        left: 12.5%;
+    }
+
+    .zigzag:nth-child(2) {
+        top: -50px;
+        left: 25%;
+    }
+
+    .zigzag:nth-child(3) {
+        top: 75px;
+        left: 37.5%;
+    }
+
+    .zigzag:nth-child(4) {
+        top: -50px;
+        left: 50%;
+    }
+
+    .zigzag:nth-child(5) {
+        top: 75px;
+        left: 62.5%;
+    }
+
+    .clients-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-left {
+        padding: 50px 50px 50px 0;
+        margin: 0;
+    }
+
+    .contact-right {
+        padding: 50px;
+        margin: 2.5vw 5vw 5vw 5vw;
+        width: 90%;
+    }
+}
+
+@media (max-width: 850px) {
+    #intro-right h1 {
+        font-size: 2.5rem;
+    }
+
+    #about h2 {
+        font-size: 1.75rem;
+    }
+
+    .services-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 350px;
+    }
+
+    .services-section button {
+        position: relative;
+        top: 0px;
+    }
+
+    .service-item {
+        height: 17.5vw;
+        width: 17.5vw;
+    }
+
+    .zigzag {
+        scale: 1.2;
+    }
+
+    .zigzag:nth-child(1) {
+        top: 200px;
+        left: 5%;
+    }
+
+    .zigzag:nth-child(2) {
+        top: 75px;
+        left: 20%;
+    }
+
+    .zigzag:nth-child(3) {
+        top: 200px;
+        left: 35%;
+    }
+
+    .zigzag:nth-child(4) {
+        top: 75px;
+        left: 50%;
+    }
+
+    .zigzag:nth-child(5) {
+        top: 200px;
+        left: 65%;
+    }
+
+    .clients-section {
+        padding: 100px;
+    }
+
+    .footer-links {
+        padding: 50px 0px;
+    }
+
+    .footer-section-1 img {
+        height: 100px;
+    }
 }
