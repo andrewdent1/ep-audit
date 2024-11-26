@@ -224,14 +224,6 @@ body {
     #about-text p {
         padding: 10px;
     }
-
-    .footer-logo img {
-        scale: 0.75;
-    }
-
-    footer {
-        padding-left: 0;
-    }
 }
 
 .footer {
